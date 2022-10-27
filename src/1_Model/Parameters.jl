@@ -220,8 +220,8 @@ stored in the fields `mode_start_file`, `data_file`, `save_mode_file` and `save_
     estimation_type::Symbol = :irfmatching # options: :likelihoodbased or :irfmatching
 
     shock_names::Array{Symbol,1} = shock_names # set in 1_Model/input_aggregate_names.jl
-    # observed_vars_input::Array{Symbol,1} = [:G, :Y, :B, :I, :rRB, :LPXA] # data for irfmatching
-	observed_vars_input::Array{Symbol, 1} 	= [:Ygrowth, :Igrowth, :Cgrowth, :N, :wgrowth, :RB,  :π]  # data for likelihoodbased
+    observed_vars_input::Array{Symbol,1} = [:G, :Y, :B, :I, :rRB, :LPXA] # data for irfmatching
+	# observed_vars_input::Array{Symbol, 1} 	= [:Ygrowth, :Igrowth, :Cgrowth, :N, :wgrowth, :RB,  :π]  # data for likelihoodbased
 
     nobservables = length(observed_vars_input)
 
