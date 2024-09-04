@@ -10,9 +10,10 @@
 
 module BASEforHANK
 
-if !Sys.isapple() # issues encountered when using mkl with macos + more than 1 thread
+if !Sys.iswindows() && !Sys.isapple() # issues encountered when using mkl with macos + more than 1 thread
     using MKL
 end
+
 
 using Plots, VegaLite, StatsPlots,  OrderedCollections, JLD2, FileIO, DataFrames, CSV, LaTeXStrings, JSON, CodecZlib, Parameters, Setfield, Flatten, FieldMetadata
 
